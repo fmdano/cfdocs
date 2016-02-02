@@ -13,7 +13,7 @@
 
 	],
 	"engines": {
-		"coldfusion": {"minimum_version":"", "notes":"", "docs":"https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-m-r/queryaddcolumn.html"},
+		"coldfusion": {"minimum_version":"4", "notes":"", "docs":"https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-m-r/queryaddcolumn.html"},
 		"lucee": {"minimum_version":"", "notes":"", "docs":"http://docs.lucee.org/reference/functions/queryaddcolumn.html"},
 		"railo": {"minimum_version":"", "notes":"", "docs":"http://railodocs.org/index.cfm/function/queryaddcolumn"},
 		"openbd": {"minimum_version":"", "notes":"", "docs":"http://openbd.org/manual/?/function/queryaddcolumn"}
@@ -25,7 +25,7 @@
 		{
 			"title":"Tag Example",
 			"description":" ",
-			"code":"<!--- Make a query. ---> \r\n <cfset myQuery = QueryNew(\"\")> \r\n  <!--- Create an array. ---> \r\n <cfset FastFoodArray = ArrayNew(1)> \r\n <cfset FastFoodArray[1] = \"French Fries\"> \r\n <cfset FastFoodArray[2] = \"Hot Dogs\"> \r\n <cfset FastFoodArray[3] = \"Fried Clams\"> \r\n <cfset FastFoodArray[4] = \"Thick Shakes\"> \r\n <!--- Use the array to add a column to the query. ---> \r\n <cfset nColumnNumber = QueryAddColumn(myQuery, \"FastFood\", \"VarChar\", FastFoodArray)> \r\n <cfdump var=\"#myQuery#\" /> ",
+			"code":"<!--- Make a query. ---> \r\n <cfset myQuery = queryNew(\"\")> \r\n  <!--- Create an array. ---> \r\n <cfset FastFoodArray = arrayNew(1)> \r\n <cfset FastFoodArray[1] = \"French Fries\"> \r\n <cfset FastFoodArray[2] = \"Hot Dogs\"> \r\n <cfset FastFoodArray[3] = \"Fried Clams\"> \r\n <cfset FastFoodArray[4] = \"Thick Shakes\"> \r\n <!--- Use the array to add a column to the query. ---> \r\n <cfset nColumnNumber = queryAddColumn(myQuery, \"FastFood\", \"VarChar\", FastFoodArray)> \r\n <cfdump var=\"#myQuery#\" /> ",
 			"result":"",
 			"runnable":true
 		}

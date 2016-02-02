@@ -14,7 +14,7 @@
 
 	],
 	"engines": {
-		"coldfusion": {"minimum_version":"", "notes":"", "docs":"https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-l/listqualify.html"},
+		"coldfusion": {"minimum_version":"4", "notes":"", "docs":"https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-l/listqualify.html"},
 		"lucee": {"minimum_version":"", "notes":"", "docs":"http://docs.lucee.org/reference/functions/listqualify.html"},
 		"railo": {"minimum_version":"", "notes":"", "docs":"http://railodocs.org/index.cfm/function/listqualify"},
 		"openbd": {"minimum_version":"", "notes":"", "docs":"http://openbd.org/manual/?/function/listqualify"}
@@ -26,19 +26,19 @@
         {
             "title": "Simple example for listQualify function with delimiter",
             "description": "To insert a string or character before and after the list elements.",
-            "code": "list = \"coldfusion:railo:144:lucee:46\";\nWriteOutput(listQualify(list, \"|\", \":\"));",
+            "code": "list = \"coldfusion:railo:144:lucee:46\";\nwriteOutput(listQualify(list, \"|\", \":\"));",
             "result": "|coldfusion|:|railo|:|144|:|lucee|:|46|"
         },
         {
             "title": "Example for listQualify function with elements",
             "description": "To insert a string or character before and after the alphabet list elements only.",
-            "code": "list = \"coldfusion:railo:144:lucee:46\";\nWriteOutput(listQualify(list, \"|\", \":\",\"CHAR\"));",
+            "code": "list = \"coldfusion:railo:144:lucee:46\";\nwriteOutput(listQualify(list, \"|\", \":\",\"CHAR\"));",
             "result": "|coldfusion|:|railo|:144:|lucee|:46"
         },
         {
             "title": "Example for listQualify function with includeEmptyFields",
             "description": "If includeEmptyFields is true, empty value add in list elements.",
-            "code": "list = \"coldfusion:railo:144::lucee::46\";\nWriteOutput(listQualify(list, \"|\", \":\",\"CHAR\",true));",
+            "code": "list = \"coldfusion:railo:144::lucee::46\";\nwriteOutput(listQualify(list, \"|\", \":\",\"CHAR\",true));",
             "result": "|coldfusion|:|railo|:144:||:|lucee|:||:46"
         }
     ]
